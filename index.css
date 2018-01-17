@@ -1,15 +1,10 @@
-body{
-	margin: 0px;
-	padding: 0px;
-	overflow: hidden;
-}
 @font-face {
   font-family: 'iconfont';  /* project id 46029 */
-  src: url('//at.alicdn.com/t/font_46029_d4m4skc7upcfpqfr.eot');
-  src: url('//at.alicdn.com/t/font_46029_d4m4skc7upcfpqfr.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_46029_d4m4skc7upcfpqfr.woff') format('woff'),
-  url('//at.alicdn.com/t/font_46029_d4m4skc7upcfpqfr.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_46029_d4m4skc7upcfpqfr.svg#iconfont') format('svg');
+  src: url('http://at.alicdn.com/t/font_46029_d4m4skc7upcfpqfr.eot');
+  src: url('http://at.alicdn.com/t/font_46029_d4m4skc7upcfpqfr.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_46029_d4m4skc7upcfpqfr.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_46029_d4m4skc7upcfpqfr.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_46029_d4m4skc7upcfpqfr.svg#iconfont') format('svg');
 }
 
 .iconfont {
@@ -19,4 +14,9 @@ body{
     -webkit-font-smoothing: antialiased;
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
 }

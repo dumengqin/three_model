@@ -431,7 +431,7 @@
 			},
 		},
 		mounted: function() {
-			this.main_model_load("http://p2l6ghssy.bkt.clouddn.com/model/model_test.obj", "http://p2l6ghssy.bkt.clouddn.com/model/model_test.jpg", document.body, this.$refs.mask);
+			this.main_model_load("http://p2l6ghssy.bkt.clouddn.com/demo/three_model/model.obj", "http://p2l6ghssy.bkt.clouddn.com/demo/three_model/model.jpg", document.body, this.$refs.mask);
 		}
 	}
 </script>
