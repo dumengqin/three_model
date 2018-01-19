@@ -190,6 +190,7 @@
 				far: 1000, //最大范围
 				sphere: [],
 				raycaster: null,
+				auto_rotate:true,
 				select_obj: null,
 				console_log: ""
 			}
@@ -213,7 +214,9 @@
 				//照相机默认是沿着z轴负方向观察的，改为（10,10,10）这个观察点后肯定看到的是一片漆黑
 				vm_this.camera.lookAt(new THREE.Vector3(0, 0, 0));
 				vm_this.controls = new THREE.OrbitControls(vm_this.camera);
-
+				vm_this.controls.addEventListener('change',function(){
+               		vm_this.auto_rotate=false;
+            	});
 				// scene
 				vm_this.scene = new THREE.Scene();
 				vm_this.scene.add(new THREE.AmbientLight(0x101030));
@@ -339,6 +342,9 @@
 			},
 			render: function() {
 				var vm_this = this;
+				if (vm_this.auto_rotate) {
+					vm_this.scene.rotation.y += 0.002;
+				}
 				vm_this.renderer.render(vm_this.scene, vm_this.camera);
 			},
 			add_obj: function(param) {
